@@ -66,6 +66,14 @@ app.get('/about', (request, response) => {
   });
 });
 
+
+app.get('/projects', (request, response) => {
+  // response.send('About Page');
+  response.render('projects.hbs', {
+    pageTitle: 'Github Projects'
+  });
+});
+
 // app.get('/bad', (request, response) => {
 //   response.send({
 //     erorrMessage: 'Unable to find the page'
